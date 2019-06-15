@@ -1,0 +1,53 @@
+.navbar-brand{
+	padding-top: 12px;
+}
+
+.navbar-header{
+	width: 100%;
+}
+
+.right-side-button{
+  float:right;
+}
+
+.nav-item{
+	padding-left: 30px;
+}
+
+ .navbar-nav{
+	padding-left: 255px; 
+
+} 	
+
+.panel-default{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.centerForm{
+	padding-left: 400px;
+	padding-top: 150px; 
+}
+
+.centerFormCadFilme{
+	margin: 0 auto;
+}
+
+.btnPad{
+	margin-bottom: 18px;
+}
+
+.centerBusca{
+	padding-left: 470px;
+	padding-top: 12px;	
+}
+
+#excluirBtn {
+  background: red;
+}
+
+.body{
+	background-image: url("https://thumbs.dreamstime.com/t/web-banner-marine-navy-blue-watercolor-gradient-fill-background-watercolour-stains-abstract-painted-template-paper-texture-110217861.jpg");
+}
+
+
