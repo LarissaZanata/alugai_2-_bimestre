@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <title>Cadastrar Filme</title>
-<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
-<link rel="stylesheet" href="/css/style.css" type="text/css">
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>  
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">
-  <img src="../imagens/filme.png">
+  <img src="imagens/filme.png">
    Alugaí
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,25 +21,25 @@
     <ul class="navbar-nav">
     	   
       <li class="nav-item">
-        <a class="nav-link" href="/home">Home</a>
+        <a class="nav-link" href="home.html">Home</a>
       </li>
       
       <li class="nav-item active">
-        <a class="nav-link" href="/cadastro">Cadastro <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="cadastro.html">Cadastro <span class="sr-only">(current)</span></a>
       </li>     
       
       <li class="nav-item">
         <a class="nav-link" href="#">Locação</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/busca">Busca</a>
+        <a class="nav-link" href="busca.html">Busca</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/reserva">Reserva</a>
+        <a class="nav-link" href="reserva.html">Reserva</a>
       </li>
       
       <li class="nav navbar-nav navbar-right">
-		<a class="right-side-button nav-link" href = "logon"><b><b>Logout</b></b></a> 
+		<a class="right-side-button nav-link" href = "logon.html"><b><b>Logout</b></b></a> 
       </li> 
        
     </ul>
@@ -57,51 +57,55 @@
 	<div class="form-group">
 		<label for="titulo" class="col-sm-2 control-label" >Nome:</label>
 	<div class="col-sm-4">
-		<input type="text" class="form-control" id="titulo" name="titulo"/>
+		<input type="text" placeholder="Digite o Nome " class="form-control" id="titulo" name="titulo"/>
 	</div>
 	</div>
 	
 	<div class="form-group">
 		<label for="diretor" class="col-sm-2 control-label" >CPF:</label>
 	<div class="col-sm-4">
-		<input type="text" class="form-control" id="diretor"  name="diretor"/>
+		<input type="text" placeholder="Digite o CPF - Ex.: 000.000.000-00" maxlength="14" autocomplete="off"" class="form-control cpf-mask" id="diretor"  name="diretor"/>
 	</div>
 	</div>
 	
 	<div class="form-group">
 		<label for="anoPublicacao" class="col-sm-2 control-label" >Endereço:</label>
 	<div class="col-sm-4">
-		<input type="text" class="form-control" id="anoPublicacao" name="anoPublicacao"/>
+		<input type="text" placeholder="Digite o Endereço " class="form-control" id="anoPublicacao" name="anoPublicacao"/>
 	</div>
 	</div>
 	
 	<div class="form-group">
 		<label for="duracao" class="col-sm-2 control-label" >Email:</label>
 	<div class="col-sm-4">
-		<input type="text" class="form-control" id="duracao" name="duracao"/>
+		<input type="text" placeholder="Digite o Email " class="form-control" id="duracao" name="duracao"/>
 	</div>
 	</div>
 	
 	<div class="form-group">
 		<label for="duracao" class="col-sm-2 control-label" >Telefone:</label>
 	<div class="col-sm-4">
-		<input type="text" class="form-control" id="duracao" name="duracao"/>
+		<input type="text" placeholder="Digite o Telefone " class="form-control" id="duracao" name="duracao"/>
 	</div>
 	</div>
 	
 	<div class="form-group">
 		<label for="duracao" class="col-sm-2 control-label" >Idade:</label>
 	<div class="col-sm-4">
-		<input type="text" class="form-control" id="duracao" name="duracao"/>
+		<input type="text" placeholder="Digite o Idade " class="form-control" id="duracao" name="duracao"/>
 	</div>
 	</div>	
 	
 	
 	<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-10">
-			<button type="submit" class="btn btn-primary">Salvar</button>
+			<a href = "cadastro.html">
+				<button type="button" onclick = msg() class="btn btn-primary">Salvar</button>				
+			</a>
 			&nbsp;
-			<button type="button" onclick="window.location='cadastro.html'" class="btn btn-danger">Cancelar</button>
+			<a href = "cadastro.html">
+				<button type="button" class="btn btn-danger">Cancelar</button>
+			</a>	
 		</div>
 	</div>
 </div>

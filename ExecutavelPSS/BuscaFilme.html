@@ -4,7 +4,7 @@
 	<title>Busca de Filmes</title>
 	<meta http-equiv="Content-Type" content = "text/html; charset=UTF-8"/>
 	
-	<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 	
 	<link href = "http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
 		th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.min.css}"
@@ -13,7 +13,7 @@
 	<script src = "http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
 		th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
 		
-	<link rel="stylesheet" href="/css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 	
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 </head>
@@ -22,7 +22,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">
-  <img alt="Alugai" src="../imagens/filme.png">
+  <img alt="Alugai" src="imagens/filme.png">
 <!-- Alugaí -->
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,11 +32,11 @@
     <ul class="navbar-nav">
     	   
       <li class="nav-item">
-        <a class="nav-link" href="/home">Home</a>
+        <a class="nav-link" href="home.html">Home</a>
       </li>
       
        <li class="nav-item">
-        <a class="nav-link" href="/cadastro">Cadastro</a>
+        <a class="nav-link" href="cadastro.html">Cadastro</a>
       </li>    
       
       <li class="nav-item">
@@ -44,10 +44,10 @@
       </li>
      
       <li class="nav-item active">
-        <a class="nav-link" href="/busca">Busca <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="busca.html">Busca <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/reserva">Reserva</a>
+        <a class="nav-link" href="reserva.html">Reserva</a>
       </li>
       
       <li class="nav navbar-nav navbar-right">
@@ -77,14 +77,14 @@
 				<td>Joe Russo</td>
 				<td>2horas e 13minutos</td>
 				<td>
-					<a href = "/busca/filme/edit">
+					<a href = "buscaEdit.html">
 					<button type="button" class="btn btn-primary">Editar</button>
 					</a>
 					
 				</td>
 				
 				<td>
-					<a href = "/busca">
+					<a href = "buscaFilme.html">
 						<button class = "btn btn-danger">Excluir</button>
 					</a>
 				</td>
@@ -92,29 +92,6 @@
 		</table>
 	</div>
 </div>	
-
-
-<div class = "container">
-	<div th:if="${not #lists.isEmpty(filmes)}">
-		<h2>Filmes</h2>
-		<table class = "table table-striped">
-			<tr>
-				<th>Título</th>
-				<th>Produtora</th>
-				<th>Diretor</th>
-				<th>Duração</th>
-			</tr>
-			
-			<tr th:each ="filme : ${filmes}">
-				<td th:text="${filmes.titulo}"></td>
-				<td th:text="${filmes.produtora}"></td>
-				<td th:text="${filmes.diretor}"></td>
-				<td th:text="${filmes.duracao}"></td>				
-			</tr>
-		</table>
-	</div>
-</div>
-
 
 
 </body>
