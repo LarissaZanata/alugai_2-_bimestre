@@ -1,3 +1,25 @@
+#button1Spec {
+    position:absolute;
+    transition: .5s ease;
+    top: 130px;
+    left: 370px;
+}
+
+#button2Spec {
+    position:absolute;
+    transition: .5s ease;
+    top: 220px;
+    left: 370px;
+}
+
+#button3Spec {	
+    position:absolute;
+    transition: .5s ease;
+    top: 309px;
+    left: 370px;
+}
+
+
 .navbar-brand{
 	padding-top: 12px;
 }
@@ -12,6 +34,7 @@
 
 .nav-item{
 	padding-left: 30px;
+
 }
 
  .navbar-nav{
@@ -47,10 +70,46 @@
 }
 
 .body{
- background-color: #82fffa;
+ background-color: #f4efeb;
 }
 .modal-backdrop
 {
  opacity:0.5;
 }
+
+.navTeste{
+	background-color: #008aa5;
+    border-color: #000000;
+}
+
+.button {
+  background-color: white; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 210px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 70px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius:5px;
+}
+
+.button1 {
+  background-color: white;
+  color: black; 
+  border: 2px solid  #008aa5;
+}
+
+.button1:hover {
+  background-color:  #008aa5;
+  color:  white;
+}
+	
+
+
+
 
