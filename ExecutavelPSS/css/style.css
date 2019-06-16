@@ -1,23 +1,38 @@
 #button1Spec {
     position:absolute;
     transition: .5s ease;
-    top: 130px;
+    top: 120px;
     left: 370px;
 }
 
 #button2Spec {
     position:absolute;
     transition: .5s ease;
-    top: 220px;
+    top: 215px;
     left: 370px;
 }
 
 #button3Spec {	
     position:absolute;
     transition: .5s ease;
-    top: 309px;
+    top: 310px;
     left: 370px;
 }
+
+#button1Relat {
+    position:absolute;
+    transition: .5s ease;
+    top: 120px;
+    left: 370px;
+}
+
+#button2Relat {
+    position:absolute;
+    transition: .5s ease;
+    top: 230px;
+    left: 370px;
+}
+
 
 
 .navbar-brand{
@@ -83,7 +98,7 @@
 }
 
 .button {
-  background-color: white; /* Green */
+  background-color: white;
   border: none;
   color: white;
   padding: 5px 210px;
@@ -92,7 +107,7 @@
   display: inline-block;
   font-size: 17px;
   margin: 70px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s; 
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius:5px;
@@ -107,6 +122,10 @@
 .button1:hover {
   background-color:  #008aa5;
   color:  white;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: white;
 }
 	
 

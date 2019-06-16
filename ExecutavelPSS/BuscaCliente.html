@@ -43,10 +43,10 @@
 	
 </head>
 
-<body>
+<body class = "body">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">
+<nav class="navbar navbar-expand-lg navbar-dark navTeste">
+  <a class="navbar-left" href="#">
   <img src="imagens/filme.png">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,8 +77,8 @@
         <a class="nav-link" href="relatorios.html">Relatórios</a>
       </li>
       
-      <li class="nav navbar-nav navbar-right">
-		<a class="right-side-button nav-link" href = "logon.html"><b><b>Logout</b></b></a> 
+      <li class="nav navbar-nav">
+		<a class="nav-link" href = "logon.html"><b><b>Logout</b></b></a> 
       </li> 
        
     </ul>
@@ -89,7 +89,7 @@
 <div class = "container">
 	<h2 style="text-align:center; padding-right:75px;">Clientes</h2>
           <label for="filtrar-tabela">Buscar Cliente:</label>
-          <input type="text" name="cpf" id = "cpf" onkeypress = "this.value = formataCPF(event)" style = "border-radius: 5px;" id="filtrar-tabela" placeholder="Digite o CPF do cliente">
+          <input type="text" name="cpf" maxlength = "14" id = "cpf" onkeypress = "this.value = formataCPF(event)" style = "border-radius: 5px;" id="filtrar-tabela" placeholder="Digite o CPF do cliente">
 		  <input style= "text-align:right" type="button" value = "Pesquisar" class="btn btn-primary"></button>
 	<div><br/>
 		<table class = "table table-striped">
