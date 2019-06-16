@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang = "en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Movimentação de Clientes</title>
+	<meta http-equiv="Content-Type" content = "text/html; charset=UTF-8"/>
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	
+	<link href = "http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+		th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.min.css}"
+		rel="stylesheet" media = "screen" />
+		
+	<script src = "http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
+		th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+		
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	
+	<script type = "text/javascript">
+		function formataData(evt){
+			vr = (navigator.appName == 'Netscape')? evt.target.value : evt.srcElement.value;
+				if(vr.length == 2) vr = vr+"/";
+				if(vr.length == 5) vr = vr+"/";
+				
+			return vr;
+		}
+	</script>
+</head>
+
+<body class = "body">
+    <nav class="navbar navbar-expand-lg navbar-dark navTeste">
+        <a class="navbar-brand" href="#">
+        <img alt="Alugai" src="imagens/filme.png">
+        Alugaí
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-header" id="navbarNav">
+          <ul class="navbar-nav">
+               
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            
+             <li class="nav-item">
+              <a class="nav-link" href="cadastro.html">Cadastro</a>
+            </li>    
+            
+            <li class="nav-item">
+              <a class="nav-link" href="emprestimo.html">Locação</a>
+            </li>
+           
+            <li class="nav-item active">
+              <a class="nav-link" href="busca.html">Busca <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reserva.html">Reserva</a>
+            </li>
+          
+          <li class="nav-item">
+              <a class="nav-link" href="Relatorios.html">Relatórios</a>
+            </li>
+            
+            <li class="nav navbar-nav navbar-right">
+          <a class="right-side-button nav-link" href = "logon.html"><b><b>Logout</b></b></a> 
+            </li> 
+             
+          </ul>
+        </div>
+      </nav>
+              
+		<h2 style = "padding-left: 350px;padding-top: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Relatório de Inadimplência</h2><br/>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+		
+		<label for="referencia">Data de Referência:</label>
+        <input type="text" name="referencia" id="date" maxlength="10" onkeypress = "this.value = formataData(event)" style = "border-radius: 5px;" id="referencia" placeholder="Digite a data de referencia">
+		<input style= "text-align:right" type="button" value="Criar PDF" id="btnImprimir" onclick="CriaPDF()" class="btn btn-primary"></button>
+
+<div class = "container" id = "tabela">
+	<div>	
+		<table class = "table table-striped"><br/>
+			<tr>
+				<th>Nome do Cliente</th>
+				<th>Cpf</th>
+				<th>Endereço</th>
+        <th>Email</th>		
+        <th>Telefone</th>	
+        <th>Valor</th>	
+			</tr>
+			
+			<tr>
+                    <td class="info-nome">Paulo Ricardo</td>
+                    <td class="info-cpf">086.452.147-99</td>
+                    <td class="info-endereco">Avenida Paraná</td>
+                    <td class="info-email">paulo.ricardo@gmail.com</td>
+                    <td class="info-telefone">(44) 99999-9999</td> 
+                    <td class="info-multa">R$ 2,50</td>				
+			</tr>
+			
+			<tr>
+                    <td class="info-nome">João Augusto</td>
+                    <td class="info-cpf">008.326.860-00</td>
+                    <td class="info-endereco">Avenida Tuiuti</td>
+                    <td class="info-email">joao.augusto@gmail.com</td>
+                    <td class="info-telefone">(44) 8366-9834</td>
+                    <td class="info-multa">R$ 4,85</td>				
+			</tr>
+			
+			<tr>
+                    <td class="info-nome">Melinda P. Franke</td>
+                    <td class="info-cpf">870.990.760-27</td>
+                    <td class="info-endereco">Rua Mandaguari</td>
+                    <td class="info-email">MelindaPFranke@rhyta.com</td>
+                    <td class="info-telefone">(44) 1366-9899</td>
+                    <td class="info-multa">R$ 9,00</td>					
+			</tr>
+			
+			<tr>
+                    <td class="info-nome">Hazel R. Hughes</td>
+                    <td class="info-cpf">298.063.540-52</td>
+                    <td class="info-endereco">Rua Tietê</td>
+                    <td class="info-email">HazelRHughes@teleworm.us</td>
+                    <td class="info-telefone">(44) 2612-8734</td>
+                    <td class="info-multa">R$ 20,00</td>								
+			</tr>
+			
+			<tr>
+                    <td class="info-nome">Calvin S. Kerney</td>
+                    <td class="info-cpf">709.261.750-25</td>
+                    <td class="info-endereco">Avenida Mandacaru</td>
+                    <td class="info-email">CalvinSKerney@teleworm.us</td>
+                    <td class="info-telefone">(44) 2105-1130</td> 
+                    <td class="info-multa">R$ 7,25</td>								
+			</tr>						
+		</table>
+	</div>
+</div>	
+
+
+</body>
+<script>
+    function CriaPDF() {
+        var minhaTabela = document.getElementById('tabela').innerHTML;
+
+        var style = "<style>";
+        style = style + "table {width: 100%;font: 14.5px Calibri;}";
+        style = style + "table, th, td {border: solid 1px #DDD; border-collapse: collapse;";
+        style = style + "padding: 2px 3px;}";
+        style = style + "</style>";
+
+        // CRIA UM OBJETO WINDOW
+        var win = window.open('', '', 'height=700,width=700');
+
+        win.document.write('<html><head>');
+        win.document.write('<title>Clientes</title>');   // <title> CABEÇALHO DO PDF.
+		win.document.write('<h2 style="text-align:center">Relatório de Inadimplência</h2>')
+        win.document.write(style);                       // INCLUI UM ESTILO NA TAB HEAD
+        win.document.write('</head>');
+        win.document.write('<body>');
+        win.document.write(minhaTabela);                   // O CONTEUDO DA TABELA DENTRO DA TAG BODY
+        win.document.write('</body></html>');
+
+        win.document.close(); 	                            // FECHA A JANELA
+
+        win.print();                                        // IMPRIME O CONTEUDO
+    }
+</script>
+</html>

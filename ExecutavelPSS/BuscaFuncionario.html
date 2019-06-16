@@ -10,37 +10,47 @@
   <script src="/js/bootstrap.min.js"></script>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">
-  <img alt="Alugai" src="imagens/filme.png">
-  Alugaí
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse navbar-header" id="navbarNav">
-    <ul class="navbar-nav">
-    	   
-      <li class="nav-item active">
-        <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="cadastro">Cadastro</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Locação</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="busca">Busca</a>
-      </li>
-      
-      <li class="nav-item">
-		<a class="right-side-button nav-link" href = "logon"><b><b>Logout</b></b></a> 
-      </li> 
-       
-    </ul>
-  </div>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-dark navTeste">
+        <a class="navbar-brand" href="#">
+        <img alt="Alugai" src="imagens/filme.png">
+        Alugaí
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-header" id="navbarNav">
+          <ul class="navbar-nav">
+               
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            
+             <li class="nav-item">
+              <a class="nav-link" href="cadastro.html">Cadastro</a>
+            </li>    
+            
+            <li class="nav-item">
+              <a class="nav-link" href="emprestimo.html">Locação</a>
+            </li>
+           
+            <li class="nav-item active">
+              <a class="nav-link" href="busca.html">Busca <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reserva.html">Reserva</a>
+            </li>
+          
+          <li class="nav-item">
+              <a class="nav-link" href="Relatorios.html">Relatórios</a>
+            </li>
+            
+            <li class="nav navbar-nav navbar-right">
+          <a class="right-side-button nav-link" href = "logon.html"><b><b>Logout</b></b></a> 
+            </li> 
+             
+          </ul>
+        </div>
+      </nav>
 
 
 
@@ -63,9 +73,9 @@
             </thead>
             <tbody id="tabela-funcionarios">
               <tr class="funcionario" id="primeiro-funcionario">
-                <td class="info-nome">Paulo Ricardo</td>
+                <td class="info-nome">Andrew R. Davidson</td>
                 <td class="info-cpf">086.452.147-99</td>
-                <td class="info-email">paulo.ricardo@gmail.com</td>          
+                <td class="info-email">AndrewRDavidson@teleworm.us</td>          
                 <td class="info-funcao">Atendente</td> 
                 <td class="info-ativo">Sim</td> 
                 <td class="info-acao">
@@ -74,10 +84,10 @@
               </tr>
   
               <tr class="funcionario" >
-                  <td class="info-nome">Paulo Ricardo</td>
-                <td class="info-cpf">086.452.147-99</td>
-                <td class="info-email">paulo.ricardo@gmail.com</td>          
-                <td class="info-funcao">Atendente</td> 
+                  <td class="info-nome">Lillian E. Duggan </td>
+                <td class="info-cpf">875.452.147-79</td>
+                <td class="info-email">LillianEDuggan@armyspy.com</td>          
+                <td class="info-funcao">Recepcionista</td> 
                 <td class="info-ativo">Sim</td> 
                 <td class="info-acao">
                     <button id="editar" class="bto-baixar">Editar</button>
@@ -85,9 +95,9 @@
               </tr>
   
               <tr class="funcionario" >
-                  <td class="info-nome">Paulo Ricardo</td>
-                <td class="info-cpf">086.452.147-99</td>
-                <td class="info-email">paulo.ricardo@gmail.com</td>          
+                  <td class="info-nome">Gilberto W. Lee</td>
+                <td class="info-cpf">216.452.147-58</td>
+                <td class="info-email">GilbertoWLee@jourrapide.com</td>          
                 <td class="info-funcao">Atendente</td> 
                 <td class="info-ativo">Sim</td> 
                 <td class="info-acao">
@@ -96,9 +106,9 @@
               </tr>
   
               <tr class="funcionario">
-                  <td class="info-nome">Paulo Ricardo</td>
-                <td class="info-cpf">086.452.147-99</td>
-                <td class="info-email">paulo.ricardo@gmail.com</td>          
+                  <td class="info-nome">Kenneth D. Ramsey</td>
+                <td class="info-cpf">186.452.147-75</td>
+                <td class="info-email">KennethDRamsey@teleworm.us</td>          
                 <td class="info-funcao">Atendente</td> 
                 <td class="info-ativo">Sim</td> 
                 <td class="info-acao">
@@ -107,10 +117,10 @@
               </tr>
 
               <tr class="funcionario" >
-                  <td class="info-nome">Paulo Ricardo</td>
-                  <td class="info-cpf">086.452.147-99</td>
-                  <td class="info-email">paulo.ricardo@gmail.com</td>          
-                  <td class="info-funcao">Atendente</td> 
+                  <td class="info-nome">Marina Silva Ferreira</td>
+                  <td class="info-cpf">096.942.147-47</td>
+                  <td class="info-email">MarinaSilvaFerreira@dayrep.com</td>          
+                  <td class="info-funcao">Vendedora</td> 
                   <td class="info-ativo">Sim</td> 
                   <td class="info-acao">
                       <button id="editar" class="bto-baixar">Editar</button>
@@ -120,18 +130,14 @@
           </table>
           <span id="erro-ajax" class="invisivel">Erro ao buscar o funcionário</span>
           <p id="mensagem">*Para excluir, clique duas vezes no nome do funcionário.</p>
-          <button id="buscar-funcionarios" class="botao bto-principal">Buscar Funcionários</button>
   
         </section>
       </main>
   
 
-
-      <script src="js/calcula-DadosEmprestimo.js" ></script>
       <script src="js/form.js" ></script>
-      <script src="js/remover-cliente.js" ></script>
-      <script src="js/filtra.js" ></script>
-      <script src="js/buscar-pacientes.js" ></script>
+      <script src="js/filtraFuncionario.js" ></script>
+      <script src="js/removerFuncionarios.js" ></script>
 </div>
 
 
