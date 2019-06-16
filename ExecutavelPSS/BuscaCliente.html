@@ -16,6 +16,17 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	
+	<script type = "text/javascript">
+		function formataCPF(evt){
+			vr = (navigator.appName == 'Netscape')? evt.target.value : evt.srcElement.value;
+				if(vr.length == 3) vr = vr+".";
+				if(vr.length == 7) vr = vr+".";
+				if(vr.length == 11) vr = vr+"-";
+				
+			return vr;
+		}
+	</script>
 </head>
 
 <body>
@@ -62,8 +73,11 @@
 
 
 <div class = "container">
-	<div>
-		<h2 class = "centerBusca">Clientes</h2>
+	<h2 style="text-align:center; padding-right:75px;">Clientes</h2>
+          <label for="filtrar-tabela">Buscar Cliente:</label>
+          <input type="text" name="cpf" id = "cpf" onkeypress = "this.value = formataCPF(event)" style = "border-radius: 5px;" id="filtrar-tabela" placeholder="Digite o CPF do cliente">
+		  <input style= "text-align:right" type="button" value = "Pesquisar" class="btn btn-primary"></button>
+	<div><br/>
 		<table class = "table table-striped">
 			<tr>
 				<th>Nome</th>

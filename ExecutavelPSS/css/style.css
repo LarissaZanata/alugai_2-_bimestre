@@ -49,5 +49,8 @@
 .body{
  background-color: #82fffa;
 }
-
+.modal-backdrop
+{
+ opacity:0.5;
+}
 
