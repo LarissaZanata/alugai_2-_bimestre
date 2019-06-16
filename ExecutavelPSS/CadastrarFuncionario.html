@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Alugaí</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/funcionario.css" type="text/css">
+</head>
+  <script src="/js/bootstrap.min.js"></script>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+  <img alt="Alugai" src="imagens/filme.png">
+  Alugaí
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse navbar-header" id="navbarNav">
+    <ul class="navbar-nav">
+    	   
+      <li class="nav-item active">
+        <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cadastro">Cadastro</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Locação</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="busca">Busca</a>
+      </li>
+      
+      <li class="nav-item">
+		<a class="right-side-button nav-link" href = "logon"><b><b>Logout</b></b></a> 
+      </li>  
+    </ul>
+  </div>
+</nav>
+
+
+<div id="modalFunc" class="modal">
+
+    <!-- Modal cadastro sucesso -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Cadastrado com Sucesso.</p>
+    </div>
+  
+</div>
+
+
+<form class="form-horizontal" method="POST" action="/filmes">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h1 class="panel-title">Cadastro de Funcionário</h1>
+		</div>
+	
+	<div class="panel-boddy">
+	<div class="form-group">
+		<label for="titulo" class="col-sm-2 control-label" >Nome:</label>
+	<div class="col-sm-4">
+		<input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome completo do funcionário"/>
+	</div>
+	</div>
+	
+	<div class="form-group">
+		<label for="diretor" class="col-sm-2 control-label" >Cpf:</label>
+	<div class="col-sm-4">
+		<input type="text" class="form-control" id="cpf"  name="cpf"  placeholder="Digite o CPF - Ex: 000.000.000-00"/>
+	</div>
+	</div>
+	
+	<div class="form-group">
+		<label for="anoPublicacao" class="col-sm-2 control-label" >email:</label>
+	<div class="col-sm-4">
+		<input type="text" class="form-control" id="email" name="email"  placeholder="Digite o Email do funcionário"/>
+	</div>
+	</div>
+	
+	<div class="form-group">
+		<label for="duracao" class="col-sm-2 control-label" >Função:</label>
+	<div class="col-sm-4">
+		<input type="text" class="form-control" id="funcao" name="funcao" placeholder="Digite a função do funcionário"/>
+	</div>
+  </div>
+  
+  <div class="form-group">
+      <label for="duracao" class="col-sm-2 control-label" >Senha:</label>
+    <div class="col-sm-4">
+      <input type="password" class="form-control" id="funcao" name="funcao" placeholder="Digite um senha para o funcionário"/>
+    </div>
+    </div>
+   
+    <div class="form-group">
+        <label for="duracao" class="col-sm-2 control-label" >Confirma Senha:</label>
+      <div class="col-sm-4">
+        <input type="password" class="form-control" id="funcao" name="funcao" placeholder="Digite a senha novamente"/>
+      </div>
+    </div>
+	
+	<div class="form-group">
+		<label for="genero" class="col-sm-2 control-label" >Ativo:</label>
+	<div class="col-sm-4">
+		<select class="form-control" name="genero">
+		<option value = "sim">Sim</option>
+		<option value = "nao">Não</option>
+		</select>
+	</div>
+	</div>
+	
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-10">
+        <a href="CadastrarFuncionario.html">
+            <button type="button" id="cadFunc" class="btn btn-primary">Cadastrar</button>
+        </a>
+		</div>
+	</div>
+</div>
+	</div>
+</form>
+     
+</div>
+
+<script src="js/form.js" ></script>
+<script src="js/cadastroFuncionario.js" ></script>
+</body>
+</html>

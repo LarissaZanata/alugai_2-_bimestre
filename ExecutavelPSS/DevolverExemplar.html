@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Alugaí</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/index.css" type="text/css">
+</head>
+  <script src="/js/bootstrap.min.js"></script>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+  <img alt="Alugai" src="imagens/filme.png">
+  Alugaí
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse navbar-header" id="navbarNav">
+    <ul class="navbar-nav">
+    	   
+      <li class="nav-item active">
+        <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cadastro">Cadastro</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Locação</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="busca">Busca</a>
+      </li>
+      
+      <li class="nav-item">
+		<a class="right-side-button nav-link" href = "logon"><b><b>Logout</b></b></a> 
+      </li> 
+       
+    </ul>
+  </div>
+</nav>
+
+<div id="myModal" class="modal">
+
+    <!-- Modal Multa -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Multa:</h2>
+      </div>
+      <div class="modal-body">
+        <p><b>Valor:</b></p>
+        <p >R$ 2,54 </p>
+        <p><b>Aplicar Multa: </b></p>
+        <select name="rebeberMulta" id="recebe-multa" >
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+        </select>
+      </div>
+      <div class="modal-footer">
+        <h3>@Alugaí | 2019</h3>
+      </div>
+    </div>
+  </div>
+
+
+
+<div>
+      <main>
+        <section class="container">
+          <h2>Locações - Recebimentos</h2>
+          <label for="filtrar-tabela">Buscar:</label>
+          <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do cliente">
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Cpf</th>
+                <th>Endereço</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Multa pendente</th>
+                <th>Ação</th>
+              </tr>
+            </thead>
+            <tbody id="tabela-clientes">
+              <tr class="cliente" id="primeiro-cliente">
+                <td class="info-nome">Paulo Ricardo</td>
+                <td class="info-cpf">086.452.147-99</td>
+                <td class="info-endereco">Avenida Paraná</td>
+                <td class="info-email">paulo.ricardo@gmail.com</td>
+                <td class="info-telefone">(44) 99999-9999</td>
+                <td class="info-multa">Não</td>           
+                <td class="info-baixaEmprestimo">
+                    <button id="baixar_emprestimo" class="bto-baixar" >Receber</button>
+                </td>
+              </tr>
+  
+              <tr class="cliente" >
+                  <td class="info-nome">João Augusto</td>
+                  <td class="info-cpf">008.326.860-00</td>
+                  <td class="info-endereco">Avenida Tuiuti</td>
+                  <td class="info-email">joao.augusto@gmail.com</td>
+                  <td class="info-telefone">810-366-9834</td>
+                  <td class="info-multa">Não</td>           
+                  <td class="info-baixaEmprestimo">
+                      <button id="baixar_emprestimo" class="bto-baixar">Receber</button>
+                  </td>
+              </tr>
+  
+              <tr class="cliente" >
+                  <td class="info-nome">Melinda P. Franke</td>
+                  <td class="info-cpf">870.990.760-27</td>
+                  <td class="info-endereco">Rua Mandaguari</td>
+                  <td class="info-email">MelindaPFranke@rhyta.com</td>
+                  <td class="info-telefone">810-366-9899</td>
+                  <td class="info-multa">Não</td>           
+                  <td class="info-baixaEmprestimo">
+                     <button id="baixar_emprestimo" class="bto-baixar">Receber</button>
+                  </td>
+              </tr>
+  
+              <tr class="cliente">
+                  <td class="info-nome">Hazel R. Hughes</td>
+                  <td class="info-cpf">298.063.540-52</td>
+                  <td class="info-endereco">Rua Tietê</td>
+                  <td class="info-email">HazelRHughes@teleworm.us</td>
+                  <td class="info-telefone">212-612-8734</td>
+                  <td class="info-multa">Sim</td>           
+                  <td class="info-baixaEmprestimo">
+                      <button id="baixar_emprestimoMulta" class="bto-baixar">Receber</button>
+                  </td>
+              </tr>
+
+              <tr class="cliente" >
+                <td class="info-nome">Calvin S. Kerney</td>
+                <td class="info-cpf">709.261.750-25</td>
+                <td class="info-endereco">Avenida Mandacaru</td>
+                <td class="info-email">CalvinSKerney@teleworm.us</td>
+                <td class="info-telefone">208-705-1130</td>
+                <td class="info-multa">Não</td>           
+                <td class="info-baixaEmprestimo">
+                    <button id="baixar_emprestimo" class="bto-baixar">Receber</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <span id="erro-ajax" class="invisivel">Erro ao buscar os clientes</span>
+          <p id="mensagem">*Para dar baixa em um empréstimo, clique duas vezes no nome do cliente.</p>
+          <button id="buscar-clientes" class="botao bto-principal">Buscar Cliente</button>
+  
+        </section>
+      </main>
+  
+
+
+      <script src="js/calcula-DadosEmprestimo.js" ></script>
+      <script src="js/form.js" ></script>
+      <script src="js/remover-cliente.js" ></script>
+      <script src="js/filtra.js" ></script>
+      <script src="js/buscar-pacientes.js" ></script>
+</div>
+
+
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

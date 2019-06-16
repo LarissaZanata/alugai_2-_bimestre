@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Alugaí</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/index.css" type="text/css">
+</head>
+  <script src="/js/bootstrap.min.js"></script>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+  <img alt="Alugai" src="imagens/filme.png">
+  Alugaí
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse navbar-header" id="navbarNav">
+    <ul class="navbar-nav">
+    	   
+      <li class="nav-item active">
+        <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cadastro">Cadastro</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Locação</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="busca">Busca</a>
+      </li>
+      
+      <li class="nav-item">
+		<a class="right-side-button nav-link" href = "logon"><b><b>Logout</b></b></a> 
+      </li> 
+       
+    </ul>
+  </div>
+</nav>
+
+
+
+<div>
+      <main>
+        <section class="container">
+          <h2>Funcionários</h2>
+          <label for="filtrar-tabela">Buscar:</label>
+          <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do funcionario">
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Cpf</th>
+                <th>Email</th>
+                <th>Função</th>
+                <th>Ativo</th>
+                <th>Ação</th>
+              </tr>
+            </thead>
+            <tbody id="tabela-funcionarios">
+              <tr class="funcionario" id="primeiro-funcionario">
+                <td class="info-nome">Paulo Ricardo</td>
+                <td class="info-cpf">086.452.147-99</td>
+                <td class="info-email">paulo.ricardo@gmail.com</td>          
+                <td class="info-funcao">Atendente</td> 
+                <td class="info-ativo">Sim</td> 
+                <td class="info-acao">
+                    <button id="editar" class="bto-baixar">Editar</button>
+                </td> 
+              </tr>
+  
+              <tr class="funcionario" >
+                  <td class="info-nome">Paulo Ricardo</td>
+                <td class="info-cpf">086.452.147-99</td>
+                <td class="info-email">paulo.ricardo@gmail.com</td>          
+                <td class="info-funcao">Atendente</td> 
+                <td class="info-ativo">Sim</td> 
+                <td class="info-acao">
+                    <button id="editar" class="bto-baixar">Editar</button>
+                </td> 
+              </tr>
+  
+              <tr class="funcionario" >
+                  <td class="info-nome">Paulo Ricardo</td>
+                <td class="info-cpf">086.452.147-99</td>
+                <td class="info-email">paulo.ricardo@gmail.com</td>          
+                <td class="info-funcao">Atendente</td> 
+                <td class="info-ativo">Sim</td> 
+                <td class="info-acao">
+                    <button id="editar" class="bto-baixar">Editar</button>
+                </td> 
+              </tr>
+  
+              <tr class="funcionario">
+                  <td class="info-nome">Paulo Ricardo</td>
+                <td class="info-cpf">086.452.147-99</td>
+                <td class="info-email">paulo.ricardo@gmail.com</td>          
+                <td class="info-funcao">Atendente</td> 
+                <td class="info-ativo">Sim</td> 
+                <td class="info-acao">
+                    <button id="editar" class="bto-baixar">Editar</button>
+                </td> 
+              </tr>
+
+              <tr class="funcionario" >
+                  <td class="info-nome">Paulo Ricardo</td>
+                  <td class="info-cpf">086.452.147-99</td>
+                  <td class="info-email">paulo.ricardo@gmail.com</td>          
+                  <td class="info-funcao">Atendente</td> 
+                  <td class="info-ativo">Sim</td> 
+                  <td class="info-acao">
+                      <button id="editar" class="bto-baixar">Editar</button>
+                  </td> 
+              </tr>
+            </tbody>
+          </table>
+          <span id="erro-ajax" class="invisivel">Erro ao buscar o funcionário</span>
+          <p id="mensagem">*Para excluir, clique duas vezes no nome do funcionário.</p>
+          <button id="buscar-funcionarios" class="botao bto-principal">Buscar Funcionários</button>
+  
+        </section>
+      </main>
+  
+
+
+      <script src="js/calcula-DadosEmprestimo.js" ></script>
+      <script src="js/form.js" ></script>
+      <script src="js/remover-cliente.js" ></script>
+      <script src="js/filtra.js" ></script>
+      <script src="js/buscar-pacientes.js" ></script>
+</div>
+
+
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
