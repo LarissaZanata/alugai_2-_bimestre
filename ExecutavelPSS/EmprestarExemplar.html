@@ -5,6 +5,9 @@
 <title>Cadastrar Filme</title>
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 <link rel="stylesheet" href="css/style.css" type="text/css">
+<script src="/js/bootstrap.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
 </head>
   <script src="/js/bootstrap.min.js"></script>  
   <script type = "text/javascript">
@@ -25,7 +28,17 @@
 			return vr;
 		}
 		
- </script>
+		function funcSuc(){
+			alert("Empréstimo realizado com sucesso!");
+		}		
+			
+		
+  </script>
+	<script >	
+		$('#exampleModalLong').on('shown.bs.modal', function () {
+		  $('#myInput').trigger('focus')
+		})
+	</script>
   
 <body>
 
@@ -103,7 +116,7 @@
 	<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-10">
 			<a href = "#">
-				<button type="button" onclick = msg() class="btn btn-primary">Confirmar</button>				
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong" >Confirmar</button>				
 			</a>
 			&nbsp;
 			<a href = "emprestimo.html">
@@ -114,6 +127,26 @@
 </div>
 	</div>
 </form>
+
+<div class="modal" id= "exampleModalLong" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Confirmação</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Deseja Confirmar o empréstimo do filme?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" onclick="funcSuc();javascript:window.location.href='emprestimo.html';" class="btn btn-primary">Confirmar</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="/js/bootstrap.min.js"></script>
 </body>
