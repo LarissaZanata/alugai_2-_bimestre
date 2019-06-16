@@ -200,3 +200,26 @@
 	
   }
 
+  h2 {
+    font-size: 2em;
+    color: #F0FFFF;
+    text-align: center; 
+    position: center;
+    margin:0;
+    top: 10%;
+    left: 10%; 
+    margin-right: 150%;
+    transform: translate(-10%, -10%);
+  }
+  
+  h3 {
+    font-size: 2em;
+    color: #F0FFFF;
+    text-align: center; 
+    position: center;
+    margin:0;
+    top: 10%;
+    left: 10%; 
+    margin-right: 73%;
+    transform: translate(-10%, -10%);
+   }

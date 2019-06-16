@@ -26,9 +26,9 @@ window.onclick = function(event) {
 
 function recebeMulta(){
     var rebebeuMulta = document.querySelector(".recebe-multa");
-    var itemSelecionado = rebebeuMulta.options[rebebeuMulta.selectedIndex].textt;
+    var itemSelecionado = rebebeuMulta.options[rebebeuMulta.selectedIndex].text;
 
-    var multaCliente = cliente.querySelector(".info-multa");
+    var multaCliente = cliente.querySelector(".info-multaPnedente");
     multaCliente.textContent = itemSelecionado; 
 }
 
