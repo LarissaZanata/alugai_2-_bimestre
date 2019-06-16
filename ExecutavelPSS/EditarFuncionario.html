@@ -53,13 +53,89 @@
       </nav>
 
 
+      <form class="form-horizontal" method="POST" action="/filmes">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h1 class="panel-title">Editar Funcionário</h1>
+            </div>
+        
+        <div class="panel-boddy">
+        <div class="form-group">
+            <label for="titulo" class="col-sm-2 control-label" >Nome:</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" id="nome" name="nome" value="Andrew R. Davidson" required/>
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o novo nome do funcionário"/>
+        </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="diretor" class="col-sm-2 control-label" >Cpf:</label>
+        <div class="col-sm-4">
+                <input type="text" class="form-control" id="nome" name="nome" value="086.452.147-99" required/>
+            <input type="text" class="form-control" id="cpf"  name="cpf"  placeholder="Digite o novo CPF - Ex: 000.000.000-00"/>
+        </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="anoPublicacao" class="col-sm-2 control-label" >email:</label>
+        <div class="col-sm-4">
+                <input type="text" class="form-control" id="nome" name="nome" value="AndrewRDavidson@teleworm.us" required/>
+            <input type="text" class="form-control" id="email" name="email"  placeholder="Digite o novo Email do funcionário"/>
+        </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="duracao" class="col-sm-2 control-label" >Função:</label>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" id="nome" name="nome" value="Atendente" required/>  
+            <input type="text" class="form-control" id="funcao" name="funcao" placeholder="Digite a nova função do funcionário"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+            <label for="duracao" class="col-sm-2 control-label" >Senha Atual:</label>
+          <div class="col-sm-4">
+            <input type="password" class="form-control" id="senhaAtual" name="senhaAtual" placeholder="Digite a senha atual para o funcionário"/>
+          </div>
+          </div>
+      
+      <div class="form-group">
+          <label for="duracao" class="col-sm-2 control-label" >Nova Senha:</label>
+        <div class="col-sm-4">
+          <input type="password" class="form-control" id="novaSeha" name="novaSeha" placeholder="Digite a nova senha para o funcionário"/>
+        </div>
+        </div>
+       
+        <div class="form-group">
+            <label for="duracao" class="col-sm-2 control-label" >Confirma Nova Senha:</label>
+          <div class="col-sm-4">
+            <input type="password" class="form-control" id="novaSenhaNovamente" name="novaSenhaNovamente" placeholder="Confirma nova senha"/>
+          </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="genero" class="col-sm-2 control-label" >Ativo:</label>
+        <div class="col-sm-4">
+            <select class="form-control" name="genero">
+            <option value = "sim">Sim</option>
+            <option value = "nao">Não</option>
+            </select>
+        </div>
+        </div>
+        
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+            <a href="BuscaFuncionario.html">
+                <button type="button" id="cadFunc" class="btn btn-primary" onclick="funcao1()">Salvar</button>
+            </a>
+            </div>
+        </div>
+    </div>
+        </div>
+    </form>
 
 
-  
-
-      <script src="js/form.js" ></script>
-      <script src="js/filtraFuncionario.js" ></script>
-      <script src="js/removerFuncionarios.js" ></script>
+      <script src="js/alerts.js" ></script>
 </div>
 
 

@@ -19,7 +19,7 @@ tabela.addEventListener("dblclick", function(event) {
 function funcao1()
 {
 var x;
-var r=confirm("Deseja realmente excluir o Funcionário!?");
+var r=confirm("Deseja realmente dar baixa nesse emprétimo?");
 if (r==true)
   {
   x=true;
