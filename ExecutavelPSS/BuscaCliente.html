@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en" xmlns:th="http://www.thymeleaf.org">
 <head>
-	<title>Busca de Filmes</title>
+	<title>Busca de Clientes</title>
 	<meta http-equiv="Content-Type" content = "text/html; charset=UTF-8"/>
 	
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -87,6 +87,9 @@
 
 
 <div class = "container">
+			<div class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Lista de clientes cadastrados&#013;Clique em Editar para alterar dados ou&#013;Clique em Excluir para apagar um registro">
+			  <button class= "btn-info" style="position: absolute;top: 100px;right: 40px;" type="button" disabled>Ajuda</button>
+			</div>
 	<h2 style="text-align:center; padding-right:75px;">Clientes</h2>
           <label for="filtrar-tabela">Buscar Cliente:</label>
           <input type="text" name="cpf" maxlength = "14" id = "cpf" onkeypress = "this.value = formataCPF(event)" style = "border-radius: 5px;" id="filtrar-tabela" placeholder="Digite o CPF do cliente">
